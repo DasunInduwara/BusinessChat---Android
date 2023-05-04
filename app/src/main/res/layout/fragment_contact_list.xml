@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginStart="@dimen/_15sdp"
+android:layout_marginEnd="@dimen/_15sdp"
+android:layout_marginTop="@dimen/_15sdp"
+android:background="@color/white"
+tools:context=".fragments.ContactFragment">
+
+<LinearLayout
+    android:gravity="center_vertical"
+    android:foregroundGravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:id="@+id/imageView"
+        app:srcCompat="@drawable/logo_icon" />
+
+    <EditText
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@drawable/custom_edit_text_background"
+        android:drawableEnd="@drawable/search_icons"
+        android:paddingEnd="@dimen/_10sdp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/settingImgBtn"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:src="@drawable/settings_icons"
+        android:background="@color/white"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/linear2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="45dp">
+
+    <TextView
+        android:text="Messages"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_440sdp"
+        android:fillViewport="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            tools:itemCount="1"
+            tools:listitem="@layout/custom_contact_recycler" />
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

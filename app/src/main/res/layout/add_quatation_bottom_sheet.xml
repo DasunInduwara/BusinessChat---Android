@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Send Quote"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/productImageView"
+            android:src="@drawable/ic_baseline_crop_original_24"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"/>
+
+        <TextView
+            android:text="Product Name"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:textSize="@dimen/_18sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Product Description"
+        android:textColor="@color/primary_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Price :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="1200.00 /="
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="16.0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_margin="@dimen/_15sdp"
+        android:padding="@dimen/_8sdp"
+        android:elevation="@dimen/_10sdp"
+        android:background="@drawable/custom_edit_text_background"
+        android:hint="Note"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"/>
+
+    <TextView
+        android:text="Est Delivery : 10 DAYS"
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="25sp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sendBtn"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:letterSpacing="0.15"
+            android:textSize="@dimen/_15sdp"
+            android:padding="@dimen/_6sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/custome_button_background_shape"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_33sdp"/>
+
+    </LinearLayout>
+</LinearLayout>

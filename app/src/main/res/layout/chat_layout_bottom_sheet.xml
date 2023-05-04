@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/Product"
+        android:src="@drawable/delivery_box"
+        android:scaleType="centerInside"
+        android:elevation="@dimen/_6sdp"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"/>
+    <ImageView
+        android:src="@drawable/camera"
+        android:layout_marginStart="40dp"
+        android:scaleType="centerInside"
+        android:elevation="@dimen/_6sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_40sdp"/>
+    <ImageView
+        android:src="@drawable/picture"
+        android:layout_marginStart="50dp"
+        android:scaleType="centerInside"
+        android:elevation="@dimen/_6sdp"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"/>
+
+</LinearLayout>
